@@ -13,6 +13,7 @@ import { Footer } from './components/footer/Footer';
 
 
 
+
 function App() {
   return (
     <div>
@@ -20,9 +21,9 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path = '/' element = {<Shop/>} />
-        <Route path = '/mens' element = {<ShopCatagories catagory = "men"/>} />
-        <Route path = '/womens' element = {<ShopCatagories catagory = "women"/>} />
-        <Route path = '/kids' element = {<ShopCatagories catagory = "kid"/>} />
+        <Route path = '/mens' element = {<ShopCatagories category = "men"/>} />
+        <Route path = '/womens' element = {<ShopCatagories category = "women"/>} />
+        <Route path = '/kids' element = {<ShopCatagories category = "kid"/>} />
 
         <Route path = "product" element = {<Product/>}/>
         <Route path = ':productId' element = { <Product/>} />
