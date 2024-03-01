@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './App.css';
 
 import { Navbar } from './components/Navbar/Navbar';
@@ -14,6 +13,7 @@ import { Footer } from './components/footer/Footer';
 
 
 
+
 function App() {
   return (
     <div>
@@ -25,8 +25,7 @@ function App() {
         <Route path = '/womens' element = {<ShopCatagories category = "women"/>} />
         <Route path = '/kids' element = {<ShopCatagories category = "kid"/>} />
 
-        <Route path = "product" element = {<Product/>}/>
-        <Route path = ':productId' element = { <Product/>} />
+        <Route path="/product/:productId" element={<Product />} />
 
         <Route path = '/login' element = {<LoginSignup/>} />
         <Route path = '/cart' element = {<Cart/>}/>

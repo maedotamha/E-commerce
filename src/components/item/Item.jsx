@@ -4,9 +4,12 @@ import {Link} from 'react-router-dom'
 
 
 export const Item = (props) => {
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <div className='item'>
-       <Link to = {`/product/${props.id}`}> <img onClick={window.scrollTo(0,0)} src={props.image}  alt="" /> </Link>
+       <Link to = {`/product/${props.id}`}> <img onClick={handleClick} src={props.image}  alt="" /> </Link>
         <p>{props.name}</p>
         <div className='item-prices'>
             <div className="item-price-new">
